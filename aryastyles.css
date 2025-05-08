@@ -2,11 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif;
+.aboutussection {
+    background-image: url(backgames.jpg);
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    height: 330px;
+    margin-top: -13px;
+    margin-bottom: 32px;
+
 }
 
 .topbar {
@@ -101,7 +105,6 @@ body {
 
 .navbar .navlinks .dropdown-content a{
     display: block;
-    margin-bottom: 2vh;
 }
 
 .navbar .navlinks .dropdown:hover .dropdown-content{
@@ -110,405 +113,99 @@ body {
     background-color: #F76B0E;
     box-shadow: 0px 0px 10px black;
     border-radius: 8px;
-    padding: 2vh;
+    padding: 5px;
     width: 35vh;
 }
+
 
 .schoolname {
     text-align: center;
     font-size: 1.7rem;
     color: #006341;
 }
+body {
 
-.banner {
-    background-image: url("aryabalimages/photo4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 80vh;
-    margin-top: 2vh;
-}
-
-.aboutUs {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    column-gap: 5vh;
-    margin: 5vh;
-}
-
-.aboutUs img {
-    height: auto;
-    width: 90%;
-}
-
-.aboutUs img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.aboutUs .aboutheading,
-.campus .aboutheading {
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: rgb(68, 68, 68);
-}
-
-.aboutUs .greentext,
-.ourculture .greentext,
-.campus .greentext,
-.facilities .greentext,
-.principaldesk .greentext,
-.photogallery .greentext,
-.formfilling .greentext {
-    font-size: 2rem;
-    color: #006341;
-}
-
-.aboutUs p,
-.ourculture p,
-.campus p,
-.facilities p {
-    font-size: 1.2rem;
-    color: darkslategray;
-}
-
-.aboutUs .darkslategray,
-.ourculture .darkslategray,
-.campus .darkslategray,
-.facilities .darkslategray,
-.principaldesk .darkslategray,
-.photogallery .darkslategray,
-.formfilling .darkslategray {
-    color: darkslategray;
-}
-
-.aboutUs button {
-    background-color: #F76B0E;
-    color: white;
-    border: 0px;
-    outline: 0px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-    cursor: pointer;
-    width: 30%;
-    height: 7vh;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.aboutUs button:hover {
-    background-color: #006341;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.ourculture {
-    margin: 5vh;
-}
-
-.ourculture div {
-    display: grid;
-    grid-template-columns: 42% 42%;
-    column-gap: 20vh;
-}
-
-.ourculture div img {
-    width: 250%;
-    height: auto;
-    border-radius: 20px;
-    border: 4px solid #F76B0E;
-    box-shadow: 0px 0px 10px black;
-}
-
-.ourculture div img:hover {
-    transform: scale(1.1);
-    border: 4px solid #006341;
-    transition: 0.5s;
-}
-
-.campus {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    column-gap: 5vh;
-    margin: 5vh;
-}
-
-.campus .aboutcampus {
-    width: 90%;
-}
-
-.campus .campusimage {
-    margin-left: -12vh;
-}
-
-.campus .campusimage .campusimagesecond {
-    margin-top: -22vh;
-    margin-left: 5vh;
-}
-
-.campus .campusimage img {
-    width: 120%;
-    height: auto;
-    border: 4px solid #F76B0E;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px black;
-}
-
-.campus .campusimage .campusimagesecond{
-    width:100%;
-    height:auto;
-}
-
-.campus .campusimage img:hover {
-    border: 4px solid #006341;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.campus .campusExpl .campusflex {
-    display: flex;
-}
-
-.campus .campusExpl .campusflex img {
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    border: 5px dashed #006341;
-    margin-right: -30vh;
-    margin-top: 4vh;
-}
-
-.vision {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    column-gap: 5vh;
-    margin: 5vh 15vh 5vh 15vh;
-}
-
-.vision .visiontwo img {
-    width: 100%;
-    height: auto;
-}
-
-.vision div {
-    background-color: #006341;
-    padding: 5vh;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #006341;
-}
-
-.vision .visiontwo {
-    text-align: center;
-}
-
-.vision h1,
-h2 {
-    color: #F76B0E;
-}
-
-.vision p {
-    color: rgb(167, 255, 167);
-}
-
-.facilities {
-    margin: 5vh;
-}
-
-.facilities h1,
-.photogallery h1,
-.formfilling h1 {
-    text-align: center;
-}
-
-.facilities .facilitiesgrid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 2vh;
-    row-gap: 4vh;
-}
-
-.facilities .facilitiesgrid img {
-    width: 95%;
-    height: auto;
-    border: 4px solid #F76B0E;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px black;
-}
-
-.facilities .facilitiesgrid img:hover {
-    border: 4px solid #006341;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px #006341;
-}
-
-.facilities .facilitiesgrid p {
-    text-align: center;
-    font-weight: bold;
-}
-
-.principaldesk {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    column-gap: 2vh;
-    margin: 5vh;
-}
-
-.principaldesk .principalmore{
-    display: none;
-}
-
-.principaldesk .principalmorebtn{
-    background-color: #F76B0E;
-    color: white;
-    border: 0px;
-    outline: 0px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-    cursor: pointer;
-    width: 30%;
-    height: 7vh;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.principaldesk .principalmorebtn:hover {
-    background-color: #006341;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.principaldesk .principalimage{
-    text-align: center;
-}
-
-.principaldesk img {
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    border: 5px solid #F76B0E;
-    box-shadow: 0px 0px 10px black;
-    margin-top: 5vh;
-}
-
-.principaldesk p {
-    font-size: 0.9rem;
-    color: darkslategray;
-    line-height: 30px;
-}
-
-.photogallery {
-    margin: 5vh 15vh 5vh 15vh;
-    text-align:center;
-    align-items:center;
-}
-
-.photogallery .photogallerygrid {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 3vh;
-    row-gap: 3vh;
-}
-
-.photogallery img {
-    width: 90%;
-    height: auto;
-    border: 4px solid #F76B0E;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px black;
-}
-
-.photogallery img:hover {
-    border: 4px solid #006341;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px #006341;
-}
-
-.photogallery .photogalleryimage2 img {
-    width: 58vh;
-    height: 38vh;
-    object-fit: cover;
-}
-
-.formfilling {
-    margin: 5vh 15vh 5vh 15vh;
-    text-align: center;
-}
-
-::placeholder {
-    color: rgb(189, 236, 189);
-}
-
-.formfilling .info input {
-    width: 30%;
-    height: 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 0px;
-    outline: 0px;
-    border-radius: 10px;
-    margin: 20px 10px;
-    padding-left: 20px;
-    background-color: #F76B0E;
-}
-
-.formfilling .info input:focus {
-    transform: scale(1.1);
-    background-color: #006341;
-    color: white;
-    box-shadow: 0px 0px 10px #006341;
-    transition: 0.5s;
-}
-
-.formfilling .address textarea {
-    width: 63%;
-    height: 25vh;
     font-family: "poppins", sans-serif;
-    font-size: 1.2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.aboutus {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 46px;
+    color: antiquewhite;
+    padding-left: 100px;
+}
+
+.menulinks {
+    text-align: center;
+    color: antiquewhite;
+    padding-left: 100px;
+
+}
+
+.aryaschoolicon img {
+    height: 128px;
+    width: 42%;
+    padding-left: 15px;
+}
+
+.menulinks a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+.ingamestext {
+    padding-left: 5px;
+    color: rgb(169, 154, 154);
+    padding-right: 99px;
+    padding-bottom: 24px;
+
+}
+
+
+.ingamesheading {
+    font-size: 25px;
     font-weight: bold;
-    border: 0px;
-    outline: 0px;
-    border-radius: 10px;
-    margin: 20px 10px;
-    padding: 20px;
-    background-color: #F76B0E;
-    color: white;
+    padding-left: 16px;
 }
 
-.formfilling .address textarea:focus {
-    transform: scale(1.2);
-    background-color: #006341;
-    color: white;
-    box-shadow: 0px 0px 10px #006341;
-    transition: 0.5s;
+.ingamesphoto1 img {
+    width: 300px;
+    height: 300px;
+    margin-top: -65px;
+    border-radius: 79px;
+    margin-left: 15px;
+    border: solid orangered;
+    object-fit: cover;
 }
 
-.formfilling .submit input {
-    width: 20%;
-    height: 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: 0px;
-    outline: 0px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    color: white;
-    background-color: #006341;
+
+.aboutusheading {
+    background-color: white;
+    margin: -6vh 30vh 21vh 7vh;
+    border-radius: 21px;
+    border: 0.5px solid gray;
+    box-shadow: 0px 0px 20px black;
+    padding-left: 10px;
+}
+.ingamesphotoes{
+    display:flex;
 }
 
-.formfilling .submit input:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 0px 20px #006341;
-    transition: 0.5s;
+.ingamesphoto2  img,
+.ingamesphoto3 img{
+  
+   /* justify-content: space-between;*/
+    border-radius: 79px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: solid orangered;
+    margin-top: -65px;
 }
-
 footer{
     align-items: center;
     background-color: #006341;
